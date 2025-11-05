@@ -1,0 +1,49 @@
+@use "../generales/variables.scss" as*;
+
+
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: $gris;
+  padding: 20px;
+  color: $blanco;
+
+  .card {
+    border: $gris-claro 10px solid;
+  }
+
+  .card-body {
+  background-color: $gris;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+    .card-text{
+    color: $blanco;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+
+}
+
+
+.formulario {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px;
+    background-color: $celeste;
+    padding: 20px;
+    vertical-align: middle;
+    width: 100%;
+
+}
+ 

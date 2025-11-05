@@ -1,0 +1,37 @@
+@use "../generales/variables.scss" as*;
+
+
+.juegos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "origins asylum"
+    "city knight";
+    gap: 10px;
+    text-align: center;
+    padding-top: 50px;
+
+    img{
+    width: 95%;
+    height: auto;
+    border-radius: 2%;
+   
+}
+
+    img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+}
+
+
+.videos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $gris;
+    padding: 20px;
+    border: $gris-claro 10px solid;
+}

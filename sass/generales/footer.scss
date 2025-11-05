@@ -1,0 +1,19 @@
+@use "../generales/variables.scss" as*;
+.footer {
+    display: flex;
+    justify-content:baseline;
+    gap: 20px;
+    background-color: $gris;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 15px;
+
+    img {
+    width: 50px;
+    max-width: 10vw;
+    height: auto;
+    background-color: $gris;
+}
+
+}  

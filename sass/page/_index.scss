@@ -1,0 +1,144 @@
+@use "../generales/variables.scss" as*;
+.banner {
+    background-image: url(../media/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $dorado; 
+    font-family:$font;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.carousel-inner img {
+  margin-top: 30px;
+  height: 600px;        
+  object-fit:cover;
+  width: 100%;
+}
+
+.grid-principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "novedades novedades novedades"
+    "foto1 foto2 foto3"
+    "foto4 foto4 logro1"
+    "foto4 foto4 logro2"
+    "foto4 foto4 logro3";
+    gap: 10px;
+    text-align: center;
+
+    img{
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    margin: 40px;   
+}
+
+
+    p{
+    font-size: 15px;
+}
+    .parrafo{
+    font-size: 20px;
+    color: $gris-claro;
+    font-family: $font;
+    font-weight: bold;
+    text-align: left;
+}
+
+    a{
+    color: $dorado;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .novedades{
+    grid-area: novedades;
+    color: $dorado;
+    background-color: $gris;
+    font-family: $font;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+    .foto-1{
+    grid-area: foto1;
+    background-color: $gris;
+}
+
+    .foto-2{
+    grid-area: foto2;
+    background-color: $gris;
+
+}
+
+    .foto-3{
+    grid-area: foto3;
+    background-color: $gris;
+}
+
+    .foto-4{
+    grid-area: foto4;
+    background-color: $gris;
+}
+
+    .logro-1{
+    grid-area: logro1;
+    background-color: $gris;
+}
+
+    .logro-2{
+    grid-area: logro2;
+    background-color: $gris;
+}
+
+    .logro-3{
+    grid-area: logro3;
+    background-color: $gris;
+}
+
+
+}
+
+
+.grid-principal{
+
+    .foto-4 img{
+    width: 90%;
+    height: auto;
+    border-radius:0%;
+}
+}
+
+.logro-1,
+.logro-2,
+.logro-3 {
+
+    img{
+    width: 60px;
+    height: 60px;
+    border-radius: 0%;
+    margin-bottom: 5px;  
+    }
+
+    img:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
+
+}
+
+
+

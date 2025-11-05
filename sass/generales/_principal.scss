@@ -1,0 +1,78 @@
+@use "../generales/variables.scss" as*;
+
+body{
+    background-color: $negro;
+    padding-top: 80px;
+}
+
+
+
+main{
+    padding-top: 70px;
+}
+
+
+.navegador{
+    display: flex;
+    font-family: $font;
+    color: $dorado;
+    background-color: $gris;
+    padding: 22px;
+    list-style: none;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-decoration: none;
+    z-index: 1000;
+
+    a {
+    font-family: $font;
+    color: $dorado;          
+    text-decoration: none;    
+    font-weight: bold;
+}
+    a:hover {
+    color: $blanco;
+    transition: color 0.3s ease;
+
+
+}
+
+}
+
+
+p{
+ font-family: $font-dos;
+ text-align: center;
+ color: #7e7878;  
+ font-size: larger;
+ font-weight: bolder;
+ font-style: normal;
+ margin: 1rem;
+ padding: 1.5rem;
+}
+
+
+h1{
+    font-family: $font;
+    color: $dorado;
+    font-weight: bold;
+}
+
+h2{
+    @extend h1;
+}
+
+h3{
+    @extend h1;
+}
+
+h4{
+    font-family: $font-dos;
+    color: $dorado;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align:initial;
+    font-weight: bold;  
+}
