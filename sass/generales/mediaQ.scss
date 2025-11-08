@@ -13,14 +13,34 @@ body {
 // Media Querie de Tablet
 
 @media (min-width: 481px) and (max-width: 1023px) {
-    .navegador{
-        flex-direction:column;
-        text-decoration:underline;
-        width: 100%;
-        border: $gris-claro 5px solid;
-        position: static;
+  .navegador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+    gap: 1rem;                  
+    padding: 1.5rem 0;          
+    width: 100%;
+    
+    border: none;               
+    background-color: $gris; 
+    position: static;
+  }
 
-    }
+  .navegador a {
+    text-decoration: none;      
+    font-size: 1.2rem;
+    color: $dorado;
+    padding: .7rem 1rem;
+    border-radius: 8px;        
+    transition: .3s;
+  }
+
+  .navegador a:hover {
+    
+    transform: scale(1.05);     
+    background-color: $dorado;  
+    color: $negro;               
+  }
     body{
         padding-top: 0;
         max-width: 100%;
@@ -62,9 +82,8 @@ body {
 @media (max-width: 480px){
     .navegador{
         flex-direction:column;
-        text-decoration:underline;
+        text-decoration:none;
         width: 100%;
-        border: $gris-claro 5px solid;
         position: static;
 
     }
@@ -91,6 +110,11 @@ body{
         text-align: center;
         
     }
+
+    .grid-principal img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 

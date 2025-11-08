@@ -261,11 +261,28 @@ h4 {
 }
 @media (min-width: 481px) and (max-width: 1023px) {
   .navegador {
+    display: flex;
     flex-direction: column;
-    text-decoration: underline;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
     width: 100%;
-    border: #5c5c5c 5px solid;
+    border: none;
+    background-color: rgb(19, 18, 18);
     position: static;
+  }
+  .navegador a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #efb810;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  .navegador a:hover {
+    transform: scale(1.05);
+    background-color: #efb810;
+    color: rgb(0, 0, 0);
   }
   body {
     padding-top: 0;
@@ -297,9 +314,8 @@ h4 {
 @media (max-width: 480px) {
   .navegador {
     flex-direction: column;
-    text-decoration: underline;
+    text-decoration: none;
     width: 100%;
-    border: #5c5c5c 5px solid;
     position: static;
   }
   main {
@@ -314,6 +330,10 @@ h4 {
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "novedades" "foto1" "foto2" "foto3";
     text-align: center;
+  }
+  .grid-principal img {
+    max-width: 100%;
+    height: auto;
   }
   .grid-principal .logro-1 {
     display: none;
